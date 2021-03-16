@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Online Bullet Journal</title>
+        <script src="bujo-pages/bujo-pages.js"></script>
+        <script src="collapse-menu/collapse-menu.js"></script>
+        <link rel="stylesheet" href="bujo-pages/bujo-pages.css">
+        <link rel="stylesheet" href="collapse-menu/collapse-menu.css">
+        <link rel="stylesheet" href="../overall.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap">
+    </head>
+    
+    <body>
+
+        <!-- taken from w3schools -->
+        <div class="dropdown">
+            <button class="dropdownbtn">&#9776;</button>
+            <div class="dropdown-content">
+                <a href="#">My Pages</a>
+                <a href="#">New Journal</a>
+                <a href="#">My Journals</a>
+            </div>
+        </div>
+
+        <div id="mainpage">
+            <div id="decor">
+                <!-- taken from w3schools -->
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="javascript:void(0)" class="options" id="sptread">Spread</a>
+                    <a href="javascript:void(0)" class="options" id="text">Text</a>
+                    <a href="javascript:void(0)" class="options" id="stickers">Stickers</a>
+                    <a href="javascript:void(0)" class="options" id="pages">Pages</a>
+                </div>
+                
+                <button class="openbtn" onclick="openNav()">&#8250;&#8250;</button>
+            </div>
+            <div id="journal"></div>
+        </div>
+
+        <div id="pagebar">
+            <div id="oddpage" class="pagenum"></div>
+            <div id="buttonbar">
+                <button type="button" id="previous" class="round">&#8249;</button>
+                <div id="buttondivider"></div>
+                <button type="button" id="next" class="round">&#8250;</button>
+            </div>
+            <div id="evenpage" class="pagenum"></div>
+        </div>
+    </body>
+
+</html>

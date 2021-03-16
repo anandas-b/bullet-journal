@@ -1,0 +1,66 @@
+/* positions the div that holds the journal */
+#journal
+{
+    margin-left: 750px;
+    margin-top: 30px;
+}
+
+/* sets the buttons inline with the page numbers and centers them */
+#buttonbar
+{
+    display: inline-block;
+    margin-left: 1305px;
+    position: fixed;
+}
+
+/* sets the width of the divder between the arrow buttons */
+#buttondivider
+{
+    width: 200px;
+    display: inline-block;
+}
+
+/* sets the size, color, etc. for the arrow buttons */
+.round
+{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #EEEE8A;
+    color: #BCAF0A;
+    border-color: #BCAF0A;
+}
+
+/* sets the page numbers inline with the arrow buttons and sets the font size */
+.pagenum
+{
+    display: inline-block;
+    font-size: 20px;
+    color: #A59906;
+}
+
+/* positions the odd page numbers */
+#oddpage
+{
+    margin-left: 785px;
+    position: fixed;
+}
+
+/* positions the even page numbers */
+#evenpage
+{
+    margin-right: 165px;
+    float: right;
+}
+
+#decor
+{
+    display: inline-block;
+}
+
+/* styles to previous and next buttons when hovered over */
+.round:hover
+{
+    background-color: #E4E483;
+}
